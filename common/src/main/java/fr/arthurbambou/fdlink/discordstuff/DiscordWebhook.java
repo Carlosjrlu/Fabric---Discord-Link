@@ -61,7 +61,7 @@ public class DiscordWebhook implements MessageSender {
             } catch (NullPointerException e) {
                 builder.setUsername("Could not get player username");
             }
-            builder.setAvatarUrl("https://ely.by/services/skins-renderer?renderFace=1&scale=18.9&url=http://skinsystem.ely.by/skins/" + author.toString() + "?&overlay");
+            builder.setAvatarUrl("https://crafatar.com/avatars/" + author.toString() + "?&overlay");
         }
 
         builder.setContent(message);
